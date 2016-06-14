@@ -1,0 +1,28 @@
+==Aplikacja warsztatu pojazdów====
+
+1. W oknie g³ównym mo¿emy wybraæ czy chcemy:
+a) rozpocz¹æ now¹ us³ugê
+b) wczytaæ historiê dotychczasowych us³ug
+
+2. W oknie nowej us³ugi wybieramy 
+a) rodziaj pojazdu (samochód, ciê¿arówka, motocykl)
+b) uzupe³niamy dane pojazdu (marka, model, nr rejestarcyjny, rocznik, rodzaj paliwa)
+c) wybieramy us³ugi jakie bêd¹ wykonane na pojeŸdzie (czêœæ us³ug jest wspólna dla wszystkich pojazdów
+a czêœæ indywidualna dla poszczególnych typów. Metoda Wash jest interfejsem - w przysz³oœciowym rozwi¹zaniu
+bêdzie mo¿na dodaæ dynamicznie zmienianie rodzaju tej us³ugi pomiêdzy pojazdami)
+
+=> start
+* nieuzupe³nienie wymaganych pól skutkuje odpowiednim komunikatem
+
+3. Przechodzimy do okna wykonywania us³ug.
+a) Po prawej stronie ostatnie podsumowanie danych => start
+b) po lewej stronie wypisane zostan¹ logi z wykonanych us³ug zale¿nie od tego jaki pojazd jest obs³ugiwany.
+
+=> finish - zapisuje us³ugê do pliku historii (history.txt w katalogu aplikacji)
+
+4. W oknie historii mo¿emy wybraæ czy:
+a) chcemy wypisaæ ca³¹ historiê
+b) chcemy wypisaæ historiê dla konkretnego nr rejestarcyjnego
+
+* jeœli nie ma pliku history.txt to zostanie wyœwietlony odpowiedni komunikat o braku pliku
+* jeœli nie ma nr rejestarcyjnego w historii to nic nie zostanie wypisane
